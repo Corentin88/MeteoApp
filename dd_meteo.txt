@@ -1,0 +1,108 @@
+MeteoController.php on line 45:
+array:5 [▼
+  "lat" => "48.2719N"
+  "lon" => "6.4822E"
+  "elevation" => 327
+  "units" => "metric"
+  "daily" => array:1 [▼
+    "data" => array:21 [▼
+      0 => array:25 [▼
+        "day" => "2025-03-06"
+        "weather" => "partly_sunny"
+        "icon" => 4
+        "summary" => "Sunny, more clouds in the afternoon and evening. Temperature 1/15 °C."
+        "predictability" => 3
+        "temperature" => 7.2
+        "temperature_min" => 0.5
+        "temperature_max" => 15.2
+        "feels_like" => 6.0
+        "feels_like_min" => -1.0
+        "feels_like_max" => 13.8
+        "wind_chill" => 6.5
+        "wind_chill_min" => -1.2
+        "wind_chill_max" => 14.8
+        "dew_point" => 1.5
+        "dew_point_min" => -3.5
+        "dew_point_max" => 7.8
+        "wind" => array:4 [▼
+          "speed" => 2.9
+          "gusts" => 8.0
+          "dir" => "SSW"
+          "angle" => 194
+        ]
+        "cloud_cover" => 32
+        "pressure" => 1022
+        "precipitation" => array:2 [▼
+          "total" => 0.0
+          "type" => "none"
+        ]
+        "probability" => array:3 [▼
+          "precipitation" => 0
+          "storm" => 0.0
+          "freeze" => 24
+        ]
+        "ozone" => 313.69
+        "humidity" => 68
+        "visibility" => 24.13
+      ]
+      1 => array:25 [▶]
+      2 => array:25 [▶]
+      3 => array:25 [▶]
+      4 => array:25 [▶]
+      5 => array:25 [▶]
+      6 => array:25 [▶]
+      7 => array:25 [▶]
+      8 => array:25 [▶]
+      9 => array:25 [▶]
+      10 => array:25 [▶]
+      11 => array:25 [▶]
+      12 => array:25 [▶]
+      13 => array:25 [▶]
+      14 => array:25 [▶]
+      15 => array:25 [▶]
+      16 => array:25 [▶]
+      17 => array:25 [▶]
+      18 => array:25 [▶]
+      19 => array:25 [▶]
+      20 => array:25 [▼
+        "day" => "2025-03-26"
+        "weather" => "partly_sunny"
+        "icon" => 4
+        "summary" => "Sunny, more clouds in the afternoon and evening. Temperature 4/14 °C."
+        "predictability" => 4
+        "temperature" => 8.2
+        "temperature_min" => 4.2
+        "temperature_max" => 14.2
+        "feels_like" => 7.5
+        "feels_like_min" => 3.2
+        "feels_like_max" => 13.2
+        "wind_chill" => 7.8
+        "wind_chill_min" => 3.8
+        "wind_chill_max" => 14.2
+        "dew_point" => 4.2
+        "dew_point_min" => 2.5
+        "dew_point_max" => 5.8
+        "wind" => array:4 [▼
+          "speed" => 1.4
+          "gusts" => 6.2
+          "dir" => "NE"
+          "angle" => 56
+        ]
+        "cloud_cover" => 25
+        "pressure" => 1020
+        "precipitation" => array:2 [▼
+          "total" => 0.0
+          "type" => "none"
+        ]
+        "probability" => array:3 [▼
+          "precipitation" => 45
+          "storm" => 0.0
+          "freeze" => 17
+        ]
+        "ozone" => 371.06
+        "humidity" => 77
+        "visibility" => 23.93
+      ]
+    ]
+  ]
+]

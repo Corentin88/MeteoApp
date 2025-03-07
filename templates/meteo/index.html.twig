@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Météo du jour{% endblock %}
+
+{% block body %}
+    <div class="weather-today">
+        <div class="weather-card">
+
+            <h1>Météo du jour</h1>
+            <p>Date : {{ day }}</p>
+            <img class="icon" src="{{ asset('assets/icon/weather_icons/set01/small/' ~ icon ~ '.png') }}" alt="{{ weather }}">
+            <p>Résumé : {{ summary }}</p>
+            <p>Température : {{ temperature }}°C</p>
+            <p>Température min : {{ temperatureMin }}°C</p>
+            <p>Température max : {{ temperatureMax }}°C</p>
+            <p>Température ressentie : {{ feelsLike }}°C</p>
+            <p>Vitesse du vent : {{ windSpeed }} km/h</p>
+            <p>Type de précipitation : {{ precipitationType }}</p>
+            <p>Probabilité de précipitation : {{ probabilityPrecipitation }}%</p>
+            <p>Probabilité de tempête : {{ probabilityStorm }}%</p>
+            <p>Probabilité de gel : {{ probabilityFreeze }}%</p>
+            <p>Humidité : {{ humidity }}%</p>
+        </div>
+    </div>
+
+    <h2>Prévisions pour la semaine :</h2>
+    <div class="weather-week">
+        {% for day in dailyData %}
+            <div class="weather-card">
+                <h3>{{ day.formattedDay }}</h3>
+                <img class="icon" src="{{ asset('assets/icon/weather_icons/set01/small/' ~ day.icon ~ '.png') }}" alt="{{ weather }}">
+                <p>Température : {{ day.temperature }}°C</p>
+                <p>Température min : {{ day.temperature_min }}°C</p>
+                <p>Température max : {{ day.temperature_max }}°C</p>
+                <p>Température ressentie : {{ day.feels_like }}°C</p>
+                <p>Vitesse du vent : {{ day.wind.speed }} km/h</p>
+                <p>Type de précipitation : {{ day.precipitation.type }}</p>
+                <p>Probabilité de précipitation : {{ day.probability.precipitation }}%</p>
+                <p>Probabilité de tempête : {{ day.probability.storm }}%</p>
+                <p>Probabilité de gel : {{ day.probability.freeze }}%</p>
+                <p>Humidité : {{ day.humidity }}%</p>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
